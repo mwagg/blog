@@ -1,0 +1,5 @@
+{{template "theme/partials/header.html"}}
+  {{ range first 10 .Data.Pages }}
+    {{ .Render "summary"}}
+  {{ end }}
+{{template "theme/partials/footer.html"}}
