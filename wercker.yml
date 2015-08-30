@@ -2,4 +2,10 @@ box: ubuntu
 build:
   steps:
     - arjen/hugo-build:
-      theme: plain
+        theme: plain
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        repo: mwagg/mwagg.github.io
+        basedir: public
