@@ -1,0 +1,5 @@
+box: ubuntu
+build:
+  steps:
+    - arjen/hugo-build:
+      theme: plain
